@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: rate-limiter
+  data:
+    redis:
+      host: localhost      # where Redis is running
+      port: 6379           # default Redis port
+      timeout: 2000ms      # how long to wait before giving up on Redis
+
+server:
+  port: 8080               # your Spring Boot app runs on this port
+
+# Custom config for our rate limiter logic
+rate-limiter:
+  capacity: 10             # max tokens a bucket can hold
+  refill-tokens: 10        # how many tokens to add on each refill
+  refill-duration: 60      # refill every 60 seconds

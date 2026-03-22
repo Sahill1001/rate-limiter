@@ -1,0 +1,9 @@
+target/
+*.log
+*.tmp
+.DS_Store
+README.md
+HELP.md
+DESIGN.md
+.git/
+.gitignore

@@ -2,6 +2,8 @@
 
 A personal Java project demonstrating token-bucket request throttling with Spring Boot and Redis Lua. This is a learning implementation; no production traffic, throughput benchmark or latency improvement is claimed.
 
+**[Read the engineering case study](docs/CASE_STUDY.md)** — request flow, implementation choices, 9 passing tests, and current limitations.
+
 ## Stack
 
 Java 17+, Spring Boot 4.0.3, Spring Data Redis, Redis, Maven, JUnit and Mockito.
